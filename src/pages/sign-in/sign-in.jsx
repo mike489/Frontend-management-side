@@ -61,8 +61,8 @@ const SignIn = () => {
             </div>
           </div>
           <div className="text-center mb-3 justify-content-around d-flex ">
-            <Link className="btn btn-large btn-outline-slate " to="/">
-              Sign in
+            <Link className="btn btn-large btn-outline-slate w-25" to="/">
+              SIGN IN
             </Link>
           </div>
         </div>
