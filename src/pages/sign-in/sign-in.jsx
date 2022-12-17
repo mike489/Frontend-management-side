@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 const SignIn = () => {
   return (
     <>
@@ -17,53 +18,56 @@ const SignIn = () => {
           E N I B L A
         </span>
       </div>
-      <div>
-        <div className=" form-group text-center mb-3 row  justify-content-center ">
-          <label className="form-label " for="Email">
-            Email address
-          </label>
-          <input
-            type="email"
-            id="email"
-            className="form-control  w-25"
-            placeholder="email"
-          />
-        </div>
+      <form>
+        <div>
+          <div className=" form-group text-center mb-3 row  justify-content-center ">
+            <label className="form-label " for="Email">
+              Email address
+            </label>
+            <input
+              type="email"
+              id="email"
+              className="form-control  w-25"
+              placeholder="email"
+            />
+          </div>
 
-        <div className=" text-center row mb-3 d-flex justify-content-center ">
-          <label className="form-label " for="password">
-            Password
-          </label>
-          <input
-            type="password"
-            id="password"
-            className="  text-slate form-control me-2 w-25  "
-            placeholder="password"
-          />
-        </div>
-        <div className="row mb-4">
-          <div className="col d-flex justify-content-center">
-            <div className="form-check">
-              <input
-                className="form-check-input"
-                type="checkbox"
-                value=""
-                id="checkbox"
-                checked
-              />
-              <label className="form-check-label" for="checkout">
-                {" "}
-                Remember me{" "}
-              </label>
+          <div className=" text-center row mb-3 d-flex justify-content-center ">
+            <label className="form-label " for="password">
+              Password
+            </label>
+            <input
+              type="password"
+              id="password"
+              className="  text-slate form-control me-2 w-25  "
+              placeholder="password"
+            />
+          </div>
+          <div className="row mb-4">
+            <div className="col d-flex justify-content-center">
+              <div className="form-check">
+                <input
+                  className="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="checkbox"
+                  checked
+                />
+                <label className="form-check-label" for="checkout">
+                  {" "}
+                  Remember me{" "}
+                </label>
+              </div>
             </div>
           </div>
+          <div className="text-center mb-3 justify-content-around d-flex ">
+            <Link className="btn btn-large btn-outline-slate " to="/">
+              Sign in
+            </Link>
+          </div>
         </div>
-        <div className=" text-center">
-          <button type="button" className="btn  btn-slate mb-4 w-25">
-            Sign in
-          </button>
-        </div>
-      </div>
+      </form>
+
       <div
         style={{
           display: "flex",
