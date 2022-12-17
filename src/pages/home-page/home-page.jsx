@@ -12,7 +12,7 @@ const HomePage = () => {
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div className="navbar-nav">
               <a className="nav-item nav-link active" href="#">
-                Dashborad <span className="sr-only"></span>
+                Dashboard <span className="sr-only"></span>
               </a>
               <a className="nav-item nav-link" href="#">
                 Orders
@@ -25,7 +25,6 @@ const HomePage = () => {
                   Settings
               </button>
               </form>
-           
             </div>
           </div>
         </nav>
