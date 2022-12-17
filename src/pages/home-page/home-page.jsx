@@ -3,22 +3,33 @@ import React from "react";
 const HomePage = () => {
   return (
     <>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">
-          Navbar
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      </nav>
+      <div>
+        <nav className="navbar navbar-expand-lg navbar-light bg-light-slate">
+          <a className="navbar-brand text-slate" href="#">
+            ENIBLA
+          </a>
+
+          <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div className="navbar-nav">
+              <a className="nav-item nav-link active" href="#">
+                Dashborad <span className="sr-only"></span>
+              </a>
+              <a className="nav-item nav-link" href="#">
+                Orders
+              </a>
+              <a className="nav-item nav-link" href="#">
+                Vendors
+              </a>
+              <form>
+                <button className="btn btn-slate " type="button" >
+                  Settings
+              </button>
+              </form>
+           
+            </div>
+          </div>
+        </nav>
+      </div>
     </>
   );
 }

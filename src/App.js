@@ -8,7 +8,7 @@ import './App.css';
 function App() {
   return (
       <Routes>
-        <Route element={<HomePage />} path="/sign-in" exact={true} />
+        <Route element={<HomePage />} path="/home-page" exact={true} />
         <Route element={<SignIn />} path="/" exact={true} />
       </Routes>
   );
